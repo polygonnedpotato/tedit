@@ -8,8 +8,15 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <input type="file" id="file-selector" accept=".txt,.text,.md,.json,.html,.htm,.js,.css,.mf,.php,.py,.csv,.svg,.xml,.java,.c,.cpp,.h,.hpp,.cs,.replit,.gitignore,.ini,.bat,.cmd,.sh">
-    in
+    <div id="file-input" hidden>
+      <input type="file" id="file-selector" accept=".txt,.text,.md,.json,.html,.htm,.js,.css,.mf,.php,.py,.csv,.svg,.xml,.java,.c,.cpp,.h,.hpp,.cs,.replit,.gitignore,.ini,.bat,.cmd,.sh">
+    </div>
+    <div id="about" hidden>
+      <h1>TediT</h1><code>[alpha]</code>
+    </div>
+    <div id="top-bar"></div>
+    <textarea id="textinput"></textarea>
+    <script src="resources.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

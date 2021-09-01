@@ -1,4 +1,4 @@
-var version="0.0.0";document.getElementById('t').innerHTML+=" "+version;
+var version="0.0.0";document.getElementById('t').innerHTML+=" "+version;var tar=document.getElementById('textinput')
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(function(registration) {
@@ -13,3 +13,19 @@ if ('serviceWorker' in navigator) {
     const fileList = event.target.files;
     console.log(fileList);
   });
+function readImage(file) {
+  // Check if the file is an image.
+  if (file.type && !file.type.startsWith('image/')) {
+    console.log('File is not an image.', file.type, file);
+    return;
+  }
+
+  const reader = new FileReader();
+  reader.addEventListener('load', (event) => {
+    img.src = event.target.result;
+  });
+  reader.readAsDataURL(file);
+}
+function setPlaceholder(fileType){
+  tar.placeholder=res.tedit.examples[fileType]
+}

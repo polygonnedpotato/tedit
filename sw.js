@@ -1,5 +1,5 @@
 var CACHE_NAME = 'tedit_v0.0.0';
-var urlsToCache = ['/','/style.css','/script.js','/icns/512.png','/icns/192.png','/mani.json'];
+var urlsToCache = ['/','/style.css','/script.js','/icns/512.png','/icns/192.png','/mani.json','/resources.js'];
 
 self.addEventListener('install', function(event) {
   event.waitUntil(

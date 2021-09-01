@@ -15,5 +15,27 @@
       "sizes":"192x192",
       "type":"image/png"
     }
+  ],
+  "file_handlers":[
+    {
+      "action":"/#loadfilefrompwa",
+      "accept":{
+        "application/atom+xml":[".atom",".xml"],
+        "application/json":[".json",".webmanifest"],
+        "application/rtf":[".rtf"],
+        "application/xhtml+xml":[".xhtml",".xht",".xml",".html",".htm"],
+        "application/xml":[".xml",".csl"],
+        "image/svg+xml":[".svg",".xml"],
+        "text/css":[".css"],
+        "text/csv":[".csv"],
+        "text/html":[".html",".htm"],
+        "text/javascript":[".js"],
+        "text/markdown":[".md",".markdown"],
+        "text/plain":[".txt",".log",".text"],
+        "text/rtf":[".rtf"],
+        "text/xml":[".xml",".csl"],
+
+      }
+    }
   ]
 }
