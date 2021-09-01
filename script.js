@@ -13,6 +13,21 @@ if ('serviceWorker' in navigator) {
     const fileList = event.target.files;
     console.log(fileList);
   });
+if(location.hash=="#loadfilefrompwa"){
+  if ('launchQueue' in window) {
+    launchQueue.setConsumer((launchParams) => {
+      // Nothing to do when the queue is empty.
+      if (!launchParams.files.length) {
+        return;
+      }
+      for (const fileHandle of launchParams.files) {
+        var file = await fileHandle.getFile()
+        var filetext = await file.text()
+        tar.value = filetext
+      }
+    });
+  }
+}
 function readImage(file) {
   // Check if the file is an image.
   if (file.type && !file.type.startsWith('image/')) {

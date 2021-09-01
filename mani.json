@@ -1,6 +1,7 @@
 {
   "name":"TediT",
   "scope":"/",
+  "description":"Open-source text editor.",
   "start_url":"/",
   "display":"standalone",
   "theme_color":"#000000",
@@ -33,8 +34,7 @@
         "text/markdown":[".md",".markdown"],
         "text/plain":[".txt",".log",".text"],
         "text/rtf":[".rtf"],
-        "text/xml":[".xml",".csl"],
-
+        "text/xml":[".xml",".csl"]
       }
     }
   ]
